@@ -3,13 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Abbas Heart Project</title>
+    <title>Terminal_Heart_v2.0</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div id="terminal">
+        <div id="history"></div>
+        <div class="input-line">
+            <span class="prompt">Abbas@iPad:~$</span>
+            <input type="text" id="commandInput" autofocus spellcheck="false" placeholder="اكتب كلمة سر هنا...">
+        </div>
+    </div>
 
     <canvas id="heartCanvas"></canvas>
-    <div class="footer">SYSTEM ACTIVE: CODED BY ABBAS</div>
 
     <script src="script.js"></script>
 </body>
