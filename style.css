@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #080808; /* أسود عميق */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+canvas {
+    display: block;
+    touch-action: none; /* يمنع تحرك الصفحة عند لمس القلب */
+}
+
+.footer {
+    position: absolute;
+    bottom: 15px;
+    font-family: 'Courier New', monospace;
+    color: #444;
+    font-size: 10px;
+    letter-spacing: 2px;
+}
