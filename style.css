@@ -1,42 +1,41 @@
 body {
     margin: 0;
     background-color: #050505;
-    color: #00ff41; /* لون الماتريكس الأخضر */
-    font-family: 'Courier New', monospace;
+    color: #00ff41; /* اللون الأخضر البرمجي */
+    font-family: monospace;
     overflow: hidden;
     height: 100vh;
-    display: flex;
-    flex-direction: column;
 }
 
 #terminal {
-    padding: 20px;
-    width: 100%;
-    height: 100%;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
+    position: relative;
     z-index: 10;
+    padding: 20px;
 }
 
 .input-line { display: flex; align-items: center; }
-.prompt { color: #ff2d55; margin-right: 10px; font-weight: bold; }
+.prompt { color: #ff2d55; margin-right: 10px; }
 
 input {
     background: transparent;
     border: none;
     color: #00ff41;
-    font-family: inherit;
-    font-size: 1.1em;
     outline: none;
-    width: 100%;
+    font-size: 18px;
+    width: 70%;
 }
 
 canvas {
-    display: none; /* مخفي حتى يتم إدخال الكلمة */
+    display: none; /* مخفي في البداية */
     position: absolute;
     top: 0; left: 0;
-    touch-action: none;
 }
 
-#history { margin-bottom: 10px; line-height: 1.5; white-space: pre-wrap; }
+.footer {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 10px;
+    color: #333;
+}
